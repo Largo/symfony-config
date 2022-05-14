@@ -77,6 +77,6 @@ class FileResource implements SelfCheckingResourceInterface, \Serializable
         ];
     }
     public function __unserialize(array $serialized): void {
-        $this->resource = unserialize($serialized);
+        $this->resource =$serialized["resource"];
     }
 }
